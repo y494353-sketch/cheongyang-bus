@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="@string/detail_title" app:navigationIcon="@drawable/ic_back" app:navigationContentDescription="@string/back" app:titleTextColor="@color/ink"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView style="@style/Heading" android:id="@+id/routeTitle" android:text="@string/detail_title"/>
+            <Space android:layout_width="1dp" android:layout_height="10dp"/>
+            <TextView style="@style/Body" android:text="@string/sample_date"/>
+            <Space android:layout_width="1dp" android:layout_height="24dp"/>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView style="@style/Time" android:id="@+id/departureTime" android:text="@string/departure" android:textSize="44sp" android:gravity="center"/>
+                    <TextView style="@style/Body" android:id="@+id/departureLabel" android:text="@string/departure" android:gravity="center"/>
+                    <TextView style="@style/Body" android:text="@string/journey_line" android:gravity="center" android:textColor="@color/green" android:textSize="22sp"/>
+                    <TextView style="@style/Time" android:id="@+id/arrivalTime" android:text="@string/arrival" android:textSize="44sp" android:gravity="center"/>
+                    <TextView style="@style/Body" android:id="@+id/arrivalLabel" android:text="@string/arrival" android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space android:layout_width="1dp" android:layout_height="20dp"/>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView style="@style/Body" android:text="@string/duration"/>
+                    <Space android:layout_width="1dp" android:layout_height="6dp"/>
+                    <TextView style="@style/Heading" android:id="@+id/durationText" android:text="@string/duration_default" android:textSize="20sp"/>
+                    <Space android:layout_width="1dp" android:layout_height="20dp"/>
+                    <TextView style="@style/Body" android:text="@string/state"/>
+                    <Space android:layout_width="1dp" android:layout_height="6dp"/>
+                    <TextView style="@style/Heading" android:text="@string/normal" android:textSize="20sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space android:layout_width="1dp" android:layout_height="24dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/favoriteButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_favorite" app:icon="@drawable/ic_star"/>
+            <Space android:layout_width="1dp" android:layout_height="12dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/alarmButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_alarm" style="@style/Widget.Material3.Button.OutlinedButton" app:cornerRadius="14dp" android:minHeight="56dp" app:icon="@drawable/ic_bell"/>
+            <Space android:layout_width="1dp" android:layout_height="16dp"/>
+            <TextView style="@style/Body" android:text="@string/details_note"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

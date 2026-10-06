@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string name="app_name">청양버스</string>
+    
+    
+    <string name="login_intro">청양 시외버스 시간표를\n간편하게 확인하세요</string>
+    
+    
+    <string name="login">로그인</string>
+    
+    
+    <string name="id_hint">아이디를 입력하세요</string>
+    
+    
+    <string name="pw_hint">비밀번호를 입력하세요</string>
+    
+    
+    <string name="user_id">아이디</string>
+    
+    
+    <string name="password">비밀번호</string>
+    
+    
+    <string name="demo_login">체험 화면입니다. 입력 없이도 시작할 수 있어요.</string>
+    
+    
+    <string name="service_label">청양 시외버스 시간 안내</string>
+    
+    
+    <string name="favorite">즐겨찾기</string>
+    
+    
+    <string name="my_page">내 정보</string>
+    
+    
+    <string name="cheongyang">청양</string>
+    
+    
+    <string name="home_intro">청양에서 시작하는\n가벼운 여행</string>
+    
+    
+    <string name="home_sub">출발부터 도착까지, 한눈에 확인하세요.</string>
+    
+    
+    <string name="destination">도착지</string>
+    
+    
+    <string name="origin">출발지</string>
+    
+    
+    <string name="where_to">어디로\n도착하시나요?</string>
+    
+    
+    <string name="where_from">어디서\n출발하시나요?</string>
+    
+    
+    <string name="recent">최근 검색</string>
+    
+    
+    <string name="recent_empty">아직 검색한 노선이 없어요</string>
+    
+    
+    <string name="recent_help">여행할 지역을 선택하고 시간표를 찾아보세요.</string>
+    
+    
+    <string name="search_title">버스 조회</string>
+    
+    
+    <string name="search_intro">어디로 떠나시나요?</string>
+    
+    
+    <string name="search_sub">출발지와 도착지를 선택해 주세요.</string>
+    
+    
+    <string name="search_button">버스 조회하기</string>
+    
+    
+    <string name="back">뒤로가기</string>
+    
+    
+    <string name="demo_notice">예시 시간표 · 실제 운행 정보가 아닙니다.</string>
+    
+    
+    <string name="sample_date">2026.09.30 · 예시 조회일</string>
+    
+    
+    <string name="schedule_count">조회 결과 · 5편</string>
+    
+    
+    <string name="duration">예상 소요시간</string>
+    
+    
+    <string name="duration_default">1시간 20분</string>
+    
+    
+    <string name="duration_format">예상 소요시간 %1$s</string>
+    
+    
+    <string name="detail">상세보기</string>
+    
+    
+    <string name="scheduled">운행예정</string>
+    
+    
+    <string name="running">운행중</string>
+    
+    
+    <string name="normal">정상 운행</string>
+    
+    
+    <string name="state">운행 상태</string>
+    
+    
+    <string name="departure">출발</string>
+    
+    
+    <string name="arrival">도착 예정</string>
+    
+    
+    <string name="detail_title">버스 상세정보</string>
+    
+    
+    <string name="add_favorite">즐겨찾기 추가</string>
+    
+    
+    <string name="remove_favorite">즐겨찾기 해제</string>
+    
+    
+    <string name="set_alarm">출발 알림 설정</string>
+    
+    
+    <string name="cancel_alarm">출발 알림 해제</string>
+    
+    
+    <string name="alarm_title">출발 알림</string>
+    
+    
+    <string name="alarm_message">출발 10분 전 알림이 선택되었습니다. 현재는 체험 UI로, 실제 알림은 발송되지 않습니다.</string>
+    
+    
+    <string name="alarm_off">출발 알림 선택을 해제했습니다.</string>
+    
+    
+    <string name="confirm">확인</string>
+    
+    
+    <string name="favorite_saved">즐겨찾기에 추가했습니다.</string>
+    
+    
+    <string name="favorite_removed">즐겨찾기를 해제했습니다.</string>
+    
+    
+    <string name="favorites_sub">자주 가는 길을 더 빠르게</string>
+    
+    
+    <string name="favorites_empty">저장한 노선이 없어요.\n버스 상세정보에서 즐겨찾기를 추가해 보세요.</string>
+    
+    
+    <string name="favorite_demo">처음에는 예시 노선 2개가 표시됩니다. 변경 사항은 앱 실행 중에만 유지됩니다.</string>
+    
+    
+    <string name="user">사용자</string>
+    
+    
+    <string name="guest">청양버스 체험 사용자</string>
+    
+    
+    <string name="favorite_routes">즐겨찾기 노선</string>
+    
+    
+    <string name="notification_settings">알림 설정</string>
+    
+    
+    <string name="logout">로그아웃</string>
+    
+    
+    <string name="account_note">로그인 및 회원정보는 체험용 화면입니다.</string>
+    
+    
+    <string name="notifications_title">알림 설정 안내</string>
+    
+    
+    <string name="notifications_message">버스 상세정보에서 각 출발편의 알림을 선택할 수 있습니다. 실제 알림은 발송되지 않으며, 선택은 앱을 종료하면 초기화됩니다.</string>
+    
+    
+    <string name="same_region">출발지와 도착지를 다르게 선택해 주세요.</string>
+    
+    
+    <string name="route_format">%1$s → %2$s</string>
+    
+    
+    <string name="detail_accessibility">%1$s 출발, %2$s 도착 예정, 상세보기</string>
+    
+    
+    <string name="journey_line">│\n↓\n│</string>
+    
+    
+    <string name="details_note">표시된 시간과 운행 상태는 UI 확인용 예시입니다.</string>
+    
+    
+    <string name="favorite_heading">저장한 노선</string>
+    
+    
+    <string name="password_toggle">비밀번호 표시 전환</string>
+    
+    
+    <string name="search_mode_to">청양에서 다른 지역으로</string>
+    
+    
+    <string name="search_mode_from">다른 지역에서 청양으로</string>
+    
+    
+    <string-array name="regions">
+        <item>청양</item>
+        <item>대전</item>
+        <item>공주</item>
+        <item>천안</item>
+        <item>서울</item>
+    </string-array>
+    
+
+</resources>

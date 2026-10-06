@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView style="@style/Body" android:layout_width="wrap_content" android:id="@+id/statusBadge" android:text="@string/scheduled" android:background="@drawable/badge_background" android:layout_gravity="start" android:textColor="@color/green_dark"/>
+        <Space android:layout_width="1dp" android:layout_height="20dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView style="@style/Body" android:id="@+id/originName" android:text="@string/departure"/>
+                <Space android:layout_width="1dp" android:layout_height="6dp"/>
+                <TextView style="@style/Time" android:id="@+id/departureTime" android:text="@string/departure"/>
+                <Space android:layout_width="1dp" android:layout_height="4dp"/>
+                <TextView style="@style/Body" android:text="@string/departure"/>
+            </LinearLayout>
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_arrow" android:importantForAccessibility="no" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView style="@style/Body" android:id="@+id/destinationName" android:text="@string/arrival"/>
+                <Space android:layout_width="1dp" android:layout_height="6dp"/>
+                <TextView style="@style/Time" android:id="@+id/arrivalTime" android:text="@string/departure"/>
+                <Space android:layout_width="1dp" android:layout_height="4dp"/>
+                <TextView style="@style/Body" android:text="@string/arrival"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="18dp"/>
+        <TextView style="@style/Body" android:id="@+id/durationText" android:text="@string/duration_default"/>
+        <Space android:layout_width="1dp" android:layout_height="16dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/detailButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/detail" style="@style/Widget.Material3.Button.OutlinedButton" app:cornerRadius="14dp" android:minHeight="56dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="@string/search_title" app:navigationIcon="@drawable/ic_back" app:navigationContentDescription="@string/back" app:titleTextColor="@color/ink"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView style="@style/Heading" android:text="@string/search_intro"/>
+            <Space android:layout_width="1dp" android:layout_height="10dp"/>
+            <TextView style="@style/Body" android:text="@string/search_sub"/>
+            <Space android:layout_width="1dp" android:layout_height="24dp"/>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView style="@style/Body" android:id="@+id/modeLabel" android:text="@string/search_mode_to"/>
+                    <Space android:layout_width="1dp" android:layout_height="20dp"/>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/origin" app:boxCornerRadiusTopStart="12dp" app:boxCornerRadiusTopEnd="12dp" app:boxCornerRadiusBottomStart="12dp" app:boxCornerRadiusBottomEnd="12dp">
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView android:id="@+id/originInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:inputType="none" android:saveEnabled="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Space android:layout_width="1dp" android:layout_height="20dp"/>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/destination" app:boxCornerRadiusTopStart="12dp" app:boxCornerRadiusTopEnd="12dp" app:boxCornerRadiusBottomStart="12dp" app:boxCornerRadiusBottomEnd="12dp">
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView android:id="@+id/destinationInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:inputType="none" android:saveEnabled="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Space android:layout_width="1dp" android:layout_height="20dp"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/searchButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/search_button"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space android:layout_width="1dp" android:layout_height="20dp"/>
+            <TextView style="@style/Body" android:text="@string/demo_notice"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
