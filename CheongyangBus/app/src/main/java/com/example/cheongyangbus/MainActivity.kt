@@ -13,11 +13,11 @@ class MainActivity : BaseActivity() {
         prepareScreen(binding.root)
         binding.favoriteButton.setOnClickListener { startActivity(Intent(this, FavoriteActivity::class.java)) }
         binding.myPageButton.setOnClickListener { startActivity(Intent(this, MyPageActivity::class.java)) }
-        binding.destinationCard.setOnClickListener { openSearch(false) }
-        binding.originCard.setOnClickListener { openSearch(true) }
+        binding.destinationCard.setOnClickListener { openSearch(BusSearchActivity.ARRIVE_AT_CHEONGYANG) }
+        binding.originCard.setOnClickListener { openSearch(BusSearchActivity.DEPART_FROM_CHEONGYANG) }
     }
-    private fun openSearch(selectOrigin: Boolean) {
-        startActivity(Intent(this, BusSearchActivity::class.java).putExtra("selectOrigin", selectOrigin))
+    private fun openSearch(searchMode: String) {
+        startActivity(Intent(this, BusSearchActivity::class.java).putExtra(BusSearchActivity.EXTRA_SEARCH_MODE, searchMode))
     }
     override fun onResume() {
         super.onResume()

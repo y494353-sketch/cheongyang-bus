@@ -221,4 +221,11 @@
     </string-array>
     
 
+    <string name="arrive_cheongyang">청양으로 도착</string>
+    <string name="depart_cheongyang">청양에서 출발</string>
+    <string name="select_origin_hint">출발할 지역을 선택하세요</string>
+    <string name="select_destination_hint">도착할 지역을 선택하세요</string>
+    <string name="search_arrival_intro">어디서 출발하시나요?</string>
+    <string name="fixed_cheongyang">청양 고정 · 변경할 수 없습니다</string>
+    <string name="select_region">목록에서 지역을 선택해 주세요.</string>
 </resources>

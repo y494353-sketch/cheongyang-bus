@@ -23,18 +23,18 @@
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
                         <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_pin" android:importantForAccessibility="no"/>
                         <Space android:layout_width="1dp" android:layout_height="20dp"/>
-                        <TextView style="@style/Heading" android:text="@string/destination" android:textSize="20sp"/>
+                        <TextView style="@style/Heading" android:text="@string/arrive_cheongyang" android:textSize="20sp"/>
                         <Space android:layout_width="1dp" android:layout_height="8dp"/>
-                        <TextView style="@style/Body" android:text="@string/where_to"/>
+                        <TextView style="@style/Body" android:text="@string/select_origin_hint"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
                 <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/originCard" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardBackgroundColor="@color/green_soft" android:layout_marginStart="6dp">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
                         <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_bus" android:importantForAccessibility="no"/>
                         <Space android:layout_width="1dp" android:layout_height="20dp"/>
-                        <TextView style="@style/Heading" android:text="@string/origin" android:textSize="20sp"/>
+                        <TextView style="@style/Heading" android:text="@string/depart_cheongyang" android:textSize="20sp"/>
                         <Space android:layout_width="1dp" android:layout_height="8dp"/>
-                        <TextView style="@style/Body" android:text="@string/where_from"/>
+                        <TextView style="@style/Body" android:text="@string/select_destination_hint"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
