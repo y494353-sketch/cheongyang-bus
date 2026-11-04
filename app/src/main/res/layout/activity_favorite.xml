@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:title="@string/favorite" app:navigationIcon="@drawable/ic_back" app:navigationContentDescription="@string/back" app:titleTextColor="@color/ink"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView style="@style/Heading" android:text="@string/favorites_sub"/>
+        <Space android:layout_width="1dp" android:layout_height="12dp"/>
+        <TextView style="@style/Body" android:text="@string/favorite_demo"/>
+        <Space android:layout_width="1dp" android:layout_height="20dp"/>
+        <TextView style="@style/Body" android:id="@+id/emptyMessage" android:text="@string/favorites_empty" android:visibility="gone"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/favoriteList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingStart="24dp" android:paddingEnd="24dp" android:paddingBottom="24dp" android:clipToPadding="false"/>
+</LinearLayout>

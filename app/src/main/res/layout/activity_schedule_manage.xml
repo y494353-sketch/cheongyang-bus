@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FA"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버스 시간표 관리"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#17233C"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버스 출발 및 도착 시간을 관리할 수 있습니다."
+        android:textSize="14sp"
+        android:textColor="#788397"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/addScheduleButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="+ 시간표 추가"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scheduleRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="관리자 화면으로 돌아가기" />
+
+</LinearLayout>
